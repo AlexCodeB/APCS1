@@ -1,0 +1,331 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style2.css" type="text/css" />
+  </head>
+  <body>
+
+
+<!-- Change the Lesson # and topic to match your assigned section -->
+
+<h2>Lesson 4-5 - Object Behavior & Designing and Using Classes</h2>
+
+
+
+
+<!-- Question 1 -->
+
+<pre>
+1.  Will this code compile? If it does, write the output.
+
+public class Example{
+    public static int multiplyThis(int x, int y) {
+        return x * y;
+    }
+
+    public static int multiplyThis(int x, int y, int z) {
+        return x * y * z;
+    }
+
+    public static void main(String[] args){
+        int product1 = multiplyThis(4, 6);
+        int product2 = multiplyThis(7, 2, 5);
+
+        System.out.println("Product 1: "+product1);
+        System.out.println("Product 2: "+product2);
+    }
+}
+
+
+</pre>
+
+
+<!-- Answer 1 -->
+
+<label class="showMore" for="answer_1">Answer</label><input id="answer_1" type="checkbox">
+<pre>
+(Answer) : Product 1: 24	
+           Product 2: 70
+</pre>
+
+<br><br>
+
+
+
+
+<!-- Question 2 -->
+
+<pre>
+2. Which class has the correctly created constructor? Explain why. If they are both correct, explain why.
+
+	public class Example{
+		private int shoes;
+		private int pants;
+		private int shirts;
+
+		public Example(int shoes, int pants, int shirts){
+			this.shoes = shoes;
+			this.pants = pants;
+			this.shirts = shirts;
+		}
+
+OR
+
+		public Example(){
+			shoes = 5;
+			pants = 10;
+			shirts = 3;
+		}
+
+	}
+
+</pre>
+
+
+<!-- Answer 2 -->
+
+<label class="showMore" for="answer_2">Answer</label><input id="answer_2" type="checkbox">
+<pre>
+Answer: 
+Both constructors are created correctly, it is an example of overloading. The first constructor contains parameters that you can manipulate in the main method. The second constructor sets initial values to the attributes.
+
+</pre>
+
+<br><br>
+
+
+
+
+<!-- Question 3 -->
+
+<pre>
+3.  Select the answer that correctly returns a decimal value.
+
+
+
+
+A. public int getDecimal(){}
+B. public String getDecimal(){}
+C. public double getDecimal(){}
+D. public void getDecimal(){}
+
+
+</pre>
+
+
+<!-- Answer 3 -->
+
+<label class="showMore" for="answer_3">Answer</label><input id="answer_3" type="checkbox">
+<pre>
+Answer: 
+C. This method returns a double, which is a decimal value.
+
+</pre>
+
+<br><br>
+
+
+
+
+<!-- Question 4 -->
+
+<pre>
+4. Which option is making the correct method call? What will it print?
+
+public class Example{
+
+	public void doThis(int num){
+		System.out.println(num);
+	}
+
+	public static void main(String[] args){
+		Example.ex = new Example();
+		1) ex.doThis();
+		2) ex.doThis(5);
+		3) doThis();
+		4) doThis(5);    
+	}
+}
+
+</pre>
+
+
+<!-- Answer 4 -->
+
+<label class="showMore" for="answer_4">Answer</label><input id="answer_4" type="checkbox">
+<pre>
+Answer: 2
+Option 2 is correct because it the object “ex” correctly calls doThis(int num); with an int as a parameter. It prints 5.
+
+</pre>
+
+<br><br>
+
+
+
+
+<!-- Codingbat Problem -->
+
+<pre>
+<b>Codingbat Problem</b>
+
+Write your codingbat problem here.  Include test cases for different kinds of inputs and edge cases.
+
+Codingbat problem. Write a method that compares the two given arrays of the same size and 
+returns how many characters they have in common at the same position. 
+However, the common characters cannot be followed by a 0.
+
+Test case 1. 
+input: [0, 5, 6, 2, 1] and [0, 5, 0, 6, 8]
+
+Test case 2.
+input: [5, 5, 5, 5, 5] and [5, 5, 5, 5, 5]
+
+Test case 3.
+input: [] and []
+
+Test case 4.
+input: [1] and [1]
+
+Test case 5.
+input: [0, 0, 0, 0, 0] and [0, 0, 0, 0, 0]
+
+Test case 6.
+input: [1, 2, 3, 4, 5, 0] and [1, 2, 9, 4, 5, 0]	    
+	
+</pre>
+
+
+<!-- Solution to Codingbat Problem -->
+
+<label class="showMore" for="codingbat_solution">Answer</label><input id="codingbat_solution" type="checkbox">
+<pre>
+public class CodingbatExample {
+    private static int compare(int[] nums1, int[] nums2){
+        int count = 0;
+        for(int i = 0; i < nums1.length; i++){
+            if ((i == nums1.length - 1 || (nums1[i+1] != 0 && nums2[i+1] != 0)) && nums1[i] == nums2[i]) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
+
+Solutions: 
+Test case 1: 1
+Test case 2: 5
+Test case 3: 0
+Test case 4: 1
+Test case 5: 1
+Test case 6: 4
+
+</pre>
+
+<br><br>
+
+
+
+
+<!-- Lab Exercise -->
+
+<pre>
+<b>Lab Exercise</b>
+
+Steps:
+1. Design a class called BankAccount. Declare attributes for hours worked, hourly pay, overtime hours worked, weeks worked, and tip accumulated.
+   Hourly pay should not change.
+2. Design a constructor that takes in the above attributes as arguments.
+3. Design another constructor that represents John’s working conditions. He works as a waiter for 25 weeks. 
+   During this time period, an average week consisted of working 30 hours, 5 overtime hours, and 50.00 dollars in tips.
+4. Create getter methods for hours, overtime hours, weeks, and tip.
+5. Create setter methods for hours, overtime hours, weeks, and tip.
+6. Create a method that calculates the yearly salary. Use a for loop to calculate this.
+7. Create a method that prints out the yearly salary.
+8. Create a main method that calls printSalary() on two new objects, John and mySalary
+
+</pre>
+
+
+<!-- Solution to Lab Exercise -->
+
+<label class="showMore" for="lab_solution">Answer</label><input id="lab_solution" type="checkbox">
+<pre>
+public class BankAccount{
+	private final double MY_PAY = 10.00; //hourly pay
+	private int myHours;    //hours worked in a week
+	private int myOvertime; //hours worked in overtime
+	private int myWeeks;    //weeks worked 
+	private double myTip;   //tip money accumulated
+
+	public BankAccount(int hours, int overtime, int weeks, double tip){
+		myHours = hours;
+		myOvertime = overtime;
+		myWeeks = weeks;
+		myTip = tip;
+	}
+
+	public BankAccount (){
+		myHours = 30;
+		myOvertime = 10;
+		myWeeks = 25;
+		myTip = 50.00;
+	}
+
+	public int getHours(){
+		return myHours;
+	}
+
+	public int getOvertime(){
+		return myOvertime;
+	}	
+
+	public double getTip(){
+		return myTip;
+	}
+
+	public int getWeeks(){
+		return myWeeks;
+	}
+
+	public void setHours(int hours){
+		myHours = hours;
+	}
+
+	public void setOvertime(int overtime){
+		myOvertime = overtime;
+	}
+
+	public void setWeeks(int weeks){
+		myWeeks = weeks;
+	}
+
+	public void setTip(double tip){
+		myTip = tip;
+	}
+
+	public double calcSalary(){
+		int salary = 0;
+		for(int i = 0; i < myWeeks; i++){
+			salary += ((myHours * MY_PAY) + (myOvertime * MY_PAY)) + myTip;
+		}
+		return salary;
+	}
+
+	public void printSalary(){
+		System.out.println(“The salary is: “ + calcSalary());
+	}
+
+
+	public static void main(String[] args){
+		BankAccount john = new BankAccount();
+		BankAccount mySalary = new BankAccount(30, 5, 30, 200.00);
+		john.printSalary();
+		mySalary.printSalary();
+	}
+}
+
+</pre>
+
+
+</body>
+</html>

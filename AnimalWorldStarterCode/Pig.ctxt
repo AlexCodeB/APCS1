@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Pig
+comment1.params=
+comment1.target=void\ dropItems()
+comment1.text=\ override\ the\ dropItems()\ method\ so\ a\ Meat\ object\ is\ added\ to\ the\ world\ at\n\ the\ same\ location\ as\ this\ pig\n
+comment2.params=
+comment2.target=void\ turn()
+comment2.text=\n\ Override\ the\ turn()\ method\ so\ the\ pig\ will\ turn\ toward\ nearby\ berries\ (within\ 100\ cells)\n\ if\ hungry.\n
+comment3.params=
+comment3.target=boolean\ isHungry()
+comment3.text=\n\ Override\ the\ isHungry()\ method\ to\ make\ the\ pig\ always\ hungry.\n
+numComments=4

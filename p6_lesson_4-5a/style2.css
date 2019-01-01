@@ -1,0 +1,217 @@
+a {
+  color: #aaaaaa;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e04000;
+}
+
+b {
+  color: #0070b0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #555555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  text-align: left;
+}
+
+input, textarea {
+  border-width: 1px;
+  padding: 2px;
+}
+
+input.button {
+  border-width: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  text-decoration: none;
+  text-align: center;
+  color: #888888
+}
+
+td {
+  font-size: 10pt;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.boxed {
+  border-spacing: 2px;
+  empty-cells: hide;
+}
+
+td.boxed {
+  background-color: #ffffff;
+  border-color: #000000;
+  border-style: solid;
+  border-width: 1px;
+  color: #000000;
+  padding: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#main {
+  margin: 0px auto;
+  text-align: left;
+  width: 42em;
+}
+
+.noteBox {
+  background-color: #f0f0f0;
+  border-color: #909090;
+  border-style: solid;
+  border-width: 1px;
+  padding: .5em;
+  width: 50%;
+}
+
+.noteBox2 {
+  background-color: #f0f0f0;
+  border-color: #909090;
+  border-style: solid;
+  border-width: 1px;
+  padding: .5em;
+  width: 760px;
+  margin-left: 0px;
+  margin-right: 0px;
+  
+}
+.iframe {
+  border-color: #909090;
+  border-style: solid;
+  border-width: 1px;
+  padding: .5em;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+
+.textalign {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.textalignsmalltext {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 9px;
+}
+
+.tablealign {
+	margin-left: 25%;
+	margin-right: 25%
+	
+}
+
+.preformatted {
+    font-family: monospace;
+    white-space: pre;
+}
+
+/* Modified from:
+   Source: https://stackoverflow.com/questions/35601762/css-transition-effects-on-show-hide-element-using-css3 */
+.showMore {
+  font-size: 14px;
+  display: block;
+  cursor: pointer;
+  font: georgia, sans-serif;
+  color: #aaaaaa;
+}
+.showMore + input {
+ display:none;
+}
+.showMore + input + * { 
+  max-height: 0;
+  /*and eventually delay an overflow:auto; */
+  overflow:hidden;
+  transition: max-height 0.0s, overflow 0s;
+}
+.showMore + input:checked + * { 
+  /* here comes the compromise, set a max-height that would for your usual contents*/
+  max-height: 30em;
+  overflow:auto;
+  transition: max-height 1.0s, overflow 1.0s 1.0s;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+/* Source: https://codepen.io/victordarras/pen/hJHAm */
+table {
+  width: 100%;
+  max-width: 600px;
+  height: 320px;
+  border-collapse: collapse;
+  border: 1px solid #38678f;
+  margin: 50px auto;
+  background: white;
+}
+th {
+  background: steelblue;
+  height: 54px;
+  width: 25%;
+  font-weight: lighter;
+  text-shadow: 0 1px 0 #38678f;
+  color: white;
+  border: 1px solid #38678f;
+  box-shadow: inset 0px 1px 2px #568ebd;
+  transition: all 0.2s;
+}
+tr {
+  border-bottom: 1px solid #cccccc;
+}
+tr:last-child {
+  border-bottom: 0px;
+}
+td {
+  border-right: 1px solid #cccccc;
+  padding: 10px;
+  transition: all 0.2s;
+}
+td:last-child {
+  border-right: 0px;
+}
+td.selected {
+  background: #d7e4ef;
+  z-index: ;
+}
+td input {
+  font-size: 14px;
+  background: none;
+  outline: none;
+  border: 0;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+}
+td input:focus {
+  box-shadow: 0 1px 0 steelblue;
+  color: steelblue;
+}
+::-moz-selection {
+  background: steelblue;
+  color: white;
+}
+::selection {
+  background: steelblue;
+  color: white;
+}
+.heavyTable {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: float 5s infinite;
+}

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=P6_Bruckhaus_Alexander_CommonList
+comment1.params=ints
+comment1.target=void\ printList(java.util.ArrayList)
+comment2.params=n\ a\ b
+comment2.target=java.util.ArrayList\ randomList(int,\ int,\ int)
+comment3.params=nums
+comment3.target=void\ removeNegatives(java.util.ArrayList)
+comment4.params=list1\ list2
+comment4.target=java.util.ArrayList\ commonList(java.util.ArrayList,\ java.util.ArrayList)
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

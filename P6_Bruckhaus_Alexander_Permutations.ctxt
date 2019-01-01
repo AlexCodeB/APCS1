@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=P6_Bruckhaus_Alexander_Permutations
+comment0.text=\ fill\ second\ array\ with\ numbers\ from\ 1\ -\ 10\n\ loop\ until\ second\ array\ is\ empty\n\ \ \ \ \ \ max\ \=\ length\ of\ second\ array\n\ \ \ \ \ \ generate\ random\ number\ r\ between\ 1\ and\ max\n\ \ \ \ \ \ find\ rth\ element\ e\ from\ second\ array\n\ \ \ \ \ \ add\ e\ to\ result\n\ \ \ \ \ \ remove\ e\ from\ first\ array\n\ return\ resul\n
+comment1.params=
+comment1.target=java.util.ArrayList\ nextPermutation()
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3

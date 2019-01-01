@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=symbol\ value
+comment0.target=Card(java.lang.String,\ int)
+comment1.params=
+comment1.target=java.lang.String\ getSymbol()
+comment2.params=
+comment2.target=int\ getValue()
+comment3.params=
+comment3.target=boolean\ isFaceUp()
+comment4.params=state
+comment4.target=void\ setFaceUp(boolean)
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

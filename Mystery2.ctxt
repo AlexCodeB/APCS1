@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Mystery2
+comment1.params=str
+comment1.target=int\ mysteryMethod2(java.lang.String)
+comment2.params=str\ i
+comment2.target=int\ calcValue(java.lang.String,\ int)
+comment3.params=c\ str\ i
+comment3.target=boolean\ isValid(char,\ java.lang.String,\ int)
+comment4.params=c
+comment4.target=boolean\ isSpecial(char)
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=P6_Bruckhaus_Alexander_Unsqueeze
+comment1.params=str
+comment1.target=int\ getTabCount(java.lang.String)
+comment2.params=str
+comment2.target=java.lang.String\ getRestOfLine(java.lang.String)
+comment3.params=f\ n
+comment3.target=void\ outputTabs(java.io.FileWriter,\ int)
+comment4.params=f\ str
+comment4.target=void\ outputLine(java.io.FileWriter,\ java.lang.String)
+comment5.params=
+comment5.target=java.io.FileWriter\ getOutFile()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7
